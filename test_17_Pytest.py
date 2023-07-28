@@ -28,7 +28,7 @@ class TestForm (unittest.TestCase):
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
         # с помощью assertEquals проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        self.assertEquals (welcome_text, "Congratulations! You have successfully registered!", "Текст не совпадает")
+        assert (welcome_text, "Congratulations! You have successfully registered!", "Текст не совпадает")
             # finally:
         # ожидание чтобы визуально оценить результаты прохождения скрипта
         # time.sleep(3)
@@ -57,7 +57,7 @@ class TestForm (unittest.TestCase):
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
         # с помощью assertEquals проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        self.assertEquals (welcome_text, "Congratulations! You have successfully registered!", "Текст не совпадает")
+        assert (welcome_text, "Congratulations! You have successfully registered!", "Текст не совпадает")
         # finally:
         # ожидание чтобы визуально оценить результаты прохождения скрипта
         # time.sleep(3)
