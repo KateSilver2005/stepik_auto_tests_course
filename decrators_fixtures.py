@@ -19,7 +19,8 @@
 # Область видимости scope (lesson3-4_step5) - scope (“function”, “class”, “module”, “session”)
 # @pytest.fixture(scope="class")
 #
-#
+# Автоиспользование фикстур (lesson3-4_step6) - autouse=True -
+# который укажет, что фикстуру нужно запустить для каждого теста даже без явного вызова
 #
 #
 

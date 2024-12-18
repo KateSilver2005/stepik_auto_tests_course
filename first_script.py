@@ -13,7 +13,7 @@ driver = webdriver.Chrome()
 time.sleep(5)
 
 # Метод get сообщает браузеру, что нужно открыть сайт по указанной ссылке
-driver.get("https://stepik.org/lesson/25969/step/12")
+driver.get("https://suninjuly.github.io/text_input_task.html")
 time.sleep(5)
 
 # Метод find_element позволяет найти нужный элемент на сайте, указав путь к нему. Способы поиска элементов мы обсудим позже

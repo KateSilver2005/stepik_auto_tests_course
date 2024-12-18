@@ -28,3 +28,17 @@ def test_exception2():
             pytest.fail("Не должно быть кнопки Отправить")
     finally:
         browser.quit()
+
+# В первом тесте элемент будет найден, поэтому ошибка NoSuchElementException, которую ожидает
+# контекстный менеджер pytest.raises, не возникнет, и тест упадёт.
+#
+# test_3_3_9_pytest_raises.py:8 (test_exception1)
+# E   Failed: Не должно быть кнопки Отправить
+# Во втором тесте, как мы и ожидали, кнопка не будет найдена, и тест пройдет.
+# У кого последний pytest, там устарел параметр  message в строке with pytest.raises(NoSuchElementException, message="Не должно быть кнопки Отправить")
+#
+# теперь так:
+#
+# with pytest.raises(NoSuchElementException):
+#     browser.find_element_by_css_selector("button.btn")
+#     pytest.fail("Не должно быть кнопки Отправить")
